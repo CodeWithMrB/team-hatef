@@ -1,0 +1,9 @@
+@font-face {
+  font-family: yekan;
+  src: url("../../font/B_Yekan/Yekan.ttf");
+}
+.persian-text {
+  font-family: yekan, sans-serif;
+}
+
+/*# sourceMappingURL=font.css.map */

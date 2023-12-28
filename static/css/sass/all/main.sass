@@ -1,0 +1,54 @@
+@import "color"
+@import "font"
+
+body
+  background-color: $color-main
+  color: white
+  .main-box
+    all: unset
+    width: 200px !important
+    height: 230px
+    padding: 30px 20px 20px 20px
+    border: 1px solid black
+    background-color: $color-main
+    //background-color: rgba(255, 255, 255, 0.2)
+
+    border-radius: 20px
+    position: relative
+    cursor: pointer
+    .work-title
+      width: 150px
+      text-align: center
+      position: absolute
+      top: 0
+      right: 50%
+      background-color: rgba(20, 20, 20, 0.2)
+      backdrop-filter: blur(2px)
+      transform: translate(50%, -50%)
+      padding: 5px 10px !important
+      border-radius: 10px
+    .img-box
+      width: 170px
+      height: 170px
+      margin: 0 auto
+      display: flex
+      justify-content: center
+      align-items: center
+      overflow: hidden
+      border-radius: 50%
+      transform: scale(0.8)
+      transition: 1s
+      img
+        width: 100%
+        height: auto
+        transition: 1s
+        filter: grayscale(1)
+    .name
+      width: 100%
+      text-align: center
+      padding-top: 10px
+    &:hover
+      .img-box
+        transform: scale(1)
+        img
+          filter: grayscale(0)
